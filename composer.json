@@ -1,0 +1,24 @@
+{
+  "name": "asilgag/aws-cli-wrapper",
+  "type": "library",
+  "description": "A simple PHP wrapper over AWS CLI command",
+  "keywords": ["AWS" ,"CLI", "shell", "bash"],
+  "homepage": "https://github.com/asilgag/aws-cli-wrapper",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alberto Silva",
+      "email": "asilgag@gmail.com",
+      "homepage": "https://github.com/asilgag"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "asilgag/cli-wrapper": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Asilgag\\CliWrapper\\AWS\\": "src/"
+    }
+  }
+}
