@@ -24,7 +24,7 @@ A simple PHP wrapper over CLI commands.
     // Set global options for specific commands.
     // In this example, all "s3" commands will be suffixed with "--only-show-errors".
     // @see https://docs.aws.amazon.com/cli/latest/reference/s3/
-    $awsCli->globalOptions('s3')->add('--only-show-errors');
+    $awsCli->getGlobalOptions('s3')->add('--only-show-errors');
 
     // Create new command.
     $command = new CliCommand('s3', ['sync', '/source/path/', 's3://bucket/', '--include *.html', '--delete']);
