@@ -1,6 +1,6 @@
 <?php
 
-namespace asilgag\CliWrapper\AWS;
+namespace Asilgag\CliWrapper\AWS;
 
 use Asilgag\CliWrapper\CliCommand;
 use Asilgag\CliWrapper\CliOptionsBag;
