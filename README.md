@@ -1,4 +1,4 @@
-# cli-wrapper
+# aws-cli-wrapper
 
 A simple PHP wrapper over CLI commands.
 
