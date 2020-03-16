@@ -42,6 +42,17 @@ class AwsCliWrapper extends CliWrapper {
     return $this->awsOptions;
   }
 
+  /*
+   * {@inheritdoc}
+   */
+  public function exec(CliCommand $command, array &$output = NULL, &$return_var = NULL): void {
+    // Ensure that AWS CLI (which runs on Python) access I/O with a proper
+    // encoding, avoiding "'utf-8' codec can't encode character" and
+    // "surrogates not allowed".
+    $this->setEnvironment('PYTHONIOENCODING', 'utf-8');
+    parent::exec($command, $output, $return_var);
+  }
+
   /**
    * {@inheritdoc}
    */
