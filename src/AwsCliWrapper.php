@@ -42,7 +42,7 @@ class AwsCliWrapper extends CliWrapper {
     return $this->awsOptions;
   }
 
-  /*
+  /**
    * {@inheritdoc}
    */
   public function exec(CliCommand $command, array &$output = NULL, &$return_var = NULL): void {
